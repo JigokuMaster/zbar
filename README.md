@@ -43,6 +43,16 @@ updated for ages:
 	http://zbar.sourceforge.net/
 
 
+Intended Audence
+================
+
+This project provides general-purpose software components intended primarily
+for integration, development, research, and infrastructure use by technical
+users.
+
+The project is not offered as a consumer-facing online service or
+managed platform.
+
 BUILDING
 ========
 
