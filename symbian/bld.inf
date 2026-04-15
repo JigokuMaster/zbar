@@ -1,0 +1,32 @@
+/*
+============================================================================
+ Name		: bld.inf
+ Author	  : JigokuMaster
+ Copyright   : Your copyright notice
+ Description : This file provides the information required for building the
+				whole of a Squirrel.
+============================================================================
+*/
+
+PRJ_PLATFORMS
+WINSCW ARMV5 GCCE
+
+PRJ_EXPORTS
+
+config.h zbar\config.h
+zbar.h zbar\zbar.h
+..\include\zbar\Decoder.h zbar\Decoder.h
+..\include\zbar\Image.h zbar\Image.h
+..\include\zbar\Processor.h zbar\Processor.h
+..\include\zbar\QZBarImage.h zbar\QZBarImage.h
+..\include\zbar\Symbol.h zbar\Symbol.h
+..\include\zbar\Window.h zbar\Window.h
+..\include\zbar\Exception.h zbar\Exception.h
+..\include\zbar\ImageScanner.h zbar\ImageScanner.h
+..\include\zbar\QZBar.h zbar\QZBar.h
+..\include\zbar\Scanner.h zbar\Scanner.h
+..\include\zbar\Video.h zbar\Video.h
+
+PRJ_MMPFILES
+
+zbar.mmp

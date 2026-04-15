@@ -1,0 +1,52 @@
+/*
+============================================================================
+ Name		: zbar.mmp
+ Author	  : JigokuMaster
+ Copyright   : Your copyright notice
+ Description : This is the project specification file for Squirrel.
+============================================================================
+*/
+
+TARGET		libzbar.lib
+TARGETTYPE	lib
+
+SOURCEPATH      ../zbar 
+SOURCE		img_scanner.c 
+SOURCE		decoder.c 
+SOURCE		image.c
+SOURCE		symbol.c
+SOURCE		convert.c
+SOURCE		config.c
+SOURCE		scanner.c
+SOURCE		error.c
+SOURCE		refcnt.c
+SOURCE		video.c
+SOURCE		video/null.c
+SOURCE		decoder/code128.c
+SOURCE		decoder/code39.c
+SOURCE		decoder/code93.c
+SOURCE		decoder/codabar.c
+SOURCE		decoder/databar.c
+SOURCE		decoder/ean.c
+SOURCE		decoder/i25.c
+SOURCE		decoder/qr_finder.c
+SOURCE		qrcode/bch15_5.c
+SOURCE		qrcode/binarize.c 
+SOURCE		qrcode/isaac.c
+SOURCE		qrcode/qrdec.c
+SOURCE		qrcode/qrdectxt.c
+SOURCE		qrcode/rs.c
+SOURCE		qrcode/util.c
+
+
+USERINCLUDE	. ../include/
+USERINCLUDE	../zbar/
+
+SYSTEMINCLUDE	 /epoc32/include
+SYSTEMINCLUDE	 /epoc32/include/stdapis
+
+
+OPTION GCCE -std=c99
+OPTION CW -lang c99 -enc UTF-8
+
+// End of File
